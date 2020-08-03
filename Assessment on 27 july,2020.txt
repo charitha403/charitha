@@ -1,0 +1,92 @@
+1,What you have learn on code concept?
+I learned about basic definitions (Programming,flowchart,algorithm,function,...)and syntax of control statements.
+
+2,What you have learn standardizing code?
+The user/developer have to write the code in the standardized format of selected programming language.
+
+3,Explain about static variables and instance variables?
+
+Instance variables:-Instance variables are created when an object is created with the use of the keyword 'new' and 
+destroyed when the object is destroyed. Instance variables can be accessed directly by calling the variable name 
+inside the class.
+
+Static variables:-Static variables are created when the program starts and destroyed when the program stops. 
+
+4,Difference between Sonarqube and Sonarlint?
+
+Sonarlint:-Sonarlint gives feedback for the code you entered. It is available in IDE (IntelliJ, Eclipse and Visual 
+Studio).
+
+Sonarqube:-Sonarqube is a central server. It analyzes all the source lines of your project on a regular basis.
+
+5,Write a program using arrays in Java?
+import java.util.Scanner;
+public class Arraysum{
+public static void main(String[] args){
+int s=0;
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int arr[]=new int[n];
+for(int i=0;i<n;i++)
+arr[i]=sc.nextInt();
+for(i=0;i<n;i++)
+s=s+i
+System.out.println(s);
+}
+}
+
+6,Write simple program in Java as an example?
+
+import java.util.Scanner;
+public class Leapyear{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+if(n%4==0 && n%100!=0||n%400==0)
+System.out.println("It is a leap year:");
+else
+System.out.println("It is not a leap year:");
+}
+}
+
+7, Use continue and return in if else conditions and switch case considering two variables?
+
+import java.util.Scanner;
+public class IfElse{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+if(a>b){
+System.out.println("a is greater:");
+}else{
+System.out.println("b is greater:");
+}
+}
+
+USING SWITCH:-
+
+import java.util.Scanner;
+public class SwitchCase{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int i=sc.nextInt();
+switch(i){
+case a:System.out.println("a");
+break;
+case b:System.out.println("b");
+break;
+default:System.out.println("Give either a value or b value:");
+}
+}
+
+
+
+
+
+
+
